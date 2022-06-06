@@ -15,8 +15,6 @@ AMyActor::AMyActor()
 void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	AMyActor::myValue = 10;
 }
 
 
@@ -27,8 +25,18 @@ void AMyActor::Tick(float DeltaTime)
 
 }
 
-void AMyActor::Hello()
+void AMyActor::Hello(FString text)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Hello World"));
+	UE_LOG(LogTemp, Warning, TEXT("LOG: %s"), *text);
+}
+
+void AMyActor::InputOutput(int Value, int& Output1, bool& Output2, FString& Output3)
+{
+	Output1 = Value;
+}
+
+int AMyActor::AddFun(int a, int b)
+{
+	return a + b;
 }
 

@@ -24,9 +24,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-	void Hello();
+	void Hello(FString text);
+
+	UFUNCTION(BlueprintCallable) 
+	void InputOutput(int Value, int& Output1, bool& Output2, FString& Output3);
 
 	UPROPERTY(BlueprintReadWrite)
 	int myValue;
+
+	UFUNCTION(BlueprintCallable)
+	int AddFun(int a, int b);
 
 };
