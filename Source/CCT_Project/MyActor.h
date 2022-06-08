@@ -23,6 +23,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//Premade garbage collection
+	//Specifyer "BlueprintCallable"
+
 	UFUNCTION(BlueprintCallable)
 	void Hello(FString text);
 
