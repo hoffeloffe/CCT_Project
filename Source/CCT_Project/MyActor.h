@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include <CCT_Project/Enemy.h>
 #include "MyActor.generated.h"
-
 UCLASS()
 class CCT_PROJECT_API AMyActor : public AActor
 {
@@ -34,5 +34,4 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	int AddFun(int a, int b);
-
 };

@@ -33,10 +33,18 @@ void AMyActor::Hello(FString text)
 void AMyActor::InputOutput(int Value, int& Output1, bool& Output2, FString& Output3)
 {
 	Output1 = Value;
+
 }
 
 int AMyActor::AddFun(int a, int b)
 {
 	return a + b;
+}
+
+void AMyActor::PrintEnemy(AEnemy enemy, int& hp, int& dmg, bool& Dead)
+{
+	hp = enemy.HP;
+	dmg = enemy.DMG;
+	Dead = enemy.Dead;
 }
 
